@@ -3,11 +3,11 @@ WebdriverIO Intercept Service
 
 🕸 Capture and assert HTTP ajax calls in [webdriver.io](http://webdriver.io/)
 
-[![Tests](https://github.com/webdriverio-community/wdio-intercept-service/actions/workflows/test.yaml/badge.svg)](https://github.com/webdriverio-community/wdio-intercept-service/actions/workflows/test.yaml) [![Join the chat at https://gitter.im/wdio-intercept-service/community](https://badges.gitter.im/chmanie/wdio-intercept-service.svg)](https://gitter.im/wdio-intercept-service/community)
+[![Tests](https://github.com/webdriverio-community/wdio-intercept-service/actions/workflows/test.yaml/badge.svg)](https://github.com/webdriverio-community/wdio-intercept-service/actions/workflows/test.yaml) [![Join the chat on Discord](https://img.shields.io/discord/1097401827202445382?logo=discord&logoColor=FFFFFF&color=5865F2)](https://discord.webdriver.io/)
 
 This is a plugin for [webdriver.io](http://webdriver.io/). If you don't know it yet, check it out, it's pretty cool.
 
-Although selenium and webdriver are used for e2e and especially UI testing, you might want to assess HTTP requests done by your client code (e.g. when you don't have immediate UI feedback, like in metrics or tracking calls). With wdio-intercept-service you can intercept ajax HTTP calls initiated by some user action (e.g. a button press, etc.) and make assertions about the request and corresponding resposes later.
+Although selenium and webdriver are used for e2e and especially UI testing, you might want to assess HTTP requests done by your client code (e.g. when you don't have immediate UI feedback, like in metrics or tracking calls). With wdio-intercept-service you can intercept ajax HTTP calls initiated by some user action (e.g. a button press, etc.) and make assertions about the request and corresponding responses later.
 
 There's one catch though: you can't intercept HTTP calls that are initiated on page load (like in most SPAs), as it requires some setup work that can only be done after the page is loaded (due to limitations in selenium). **That means you can just capture requests that were initiated inside a test.** If you're fine with that, this plugin might be for you, so read on.
 
@@ -19,7 +19,7 @@ There's one catch though: you can't intercept HTTP calls that are initiated on p
 
 ## Installation
 
-```
+```shell
 npm install wdio-intercept-service -D
 ```
 
